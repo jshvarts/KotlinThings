@@ -5,4 +5,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- Sub-Activities -->
+    <string name="activity_null_safety">Null Safety</string>
+
 </resources>
