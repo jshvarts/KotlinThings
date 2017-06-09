@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_null_safety"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Null Safety" />
+        <item
+            android:id="@+id/nav_safe_casts"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Safe Casts" />
+        <item
+            android:id="@+id/nav_ext_functions"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Extension Functions" />
+        <item
+            android:id="@+id/nav_op_overloading"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Operator Overloading" />
+    </group>
+
+    <item android:title="Classes &amp; Inheritance">
+        <menu>
+            <item
+                android:id="@+id/nav_classes"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Classes" />
+            <item
+                android:id="@+id/nav_data_classes"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Data Classes" />
+            <item
+                android:id="@+id/nav_sealed_classes"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Sealed Classes" />
+        </menu>
+    </item>
+
+</menu>
