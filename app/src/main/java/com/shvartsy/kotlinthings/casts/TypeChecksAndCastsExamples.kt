@@ -18,4 +18,19 @@ class TypeChecksAndCastsExamples {
         }
         return obj.length
     }
+
+    /**
+     * Safe (nullable) cast. Returns length of String if param has a type of String. Otherwise, returns -1
+     */
+    fun operatorAsAndElvis(obj: Any): Int? {
+        return (obj as? String)?.length ?: -1
+    }
+
+    fun whenWithSmartCast(obj: Any): Int {
+        when(obj) {
+            is Int -> return obj
+            is String -> return obj.length
+            else -> return -1
+        }
+    }
 }
