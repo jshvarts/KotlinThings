@@ -1,4 +1,4 @@
-package com.shvartsy.kotlinthings.kotlinthings
+package com.shvartsy.kotlinthings
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,7 +12,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
-import com.shvartsy.kotlinthings.kotlinthings.nullsafety.NullSafetyActivity
+import com.shvartsy.kotlinthings.nullsafety.NullSafetyActivity
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
