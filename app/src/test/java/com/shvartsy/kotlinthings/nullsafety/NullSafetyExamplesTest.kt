@@ -147,4 +147,35 @@ class NullSafetyExamplesTest {
         // WHEN
         testSubject.doubleBang(nullString)
     }
+
+    @Test
+    fun safeCast_whenParamNotNull_returnsParamLength() {
+        // WHEN
+        val result: Int? = testSubject.safeCast(notNullString)
+
+        // THEN
+        assertEquals(notNullString.length, result)
+    }
+
+    @Test
+    fun safeCast_whenParamIsNull_returnsNull() {
+        // WHEN
+        val result: Int? = testSubject.safeCast(nullString)
+
+        // THEN
+        assertNull(result)
+    }
+
+
+    @Test
+    fun filterNotNullFromNullableListElements_retainsNotNullElementsOnly() {
+        // GIVEN
+        val nullableList: List<Int?> = listOf(1, 2, null, 4)
+
+        // WHEN
+        val result: List<Int> = testSubject.filterNotNullFromNullableListElements(nullableList)
+
+        // THEN
+        assertEquals(3, result.size)
+    }
 }

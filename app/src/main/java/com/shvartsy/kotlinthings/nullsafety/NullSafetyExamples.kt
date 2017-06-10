@@ -56,5 +56,20 @@ class NullSafetyExamples {
         return str!!.length
     }
 
+    /**
+     * Avoid ClassCastException by performing a safe cast which returns null if cast failed.
+     */
+    fun safeCast(str: String?): Int? {
+        val ret = str as? String
+        return ret?.length
+    }
+
+    /**
+     * Filters non null values out of a collection of elements of a nullable type
+     */
+    fun filterNotNullFromNullableListElements(nullableList: List<Int?>): List<Int> {
+        return nullableList.filterNotNull()
+    }
+
     fun executeFoo() {}
 }
