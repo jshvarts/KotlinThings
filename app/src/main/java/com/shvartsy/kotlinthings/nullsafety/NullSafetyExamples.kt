@@ -1,7 +1,7 @@
 package com.shvartsy.kotlinthings.nullsafety
 
 /**
- * Examples of how Kotlin handles Null Safety.
+ * Kotlin idioms regarding Null Safety.
  */
 class NullSafetyExamples {
 
