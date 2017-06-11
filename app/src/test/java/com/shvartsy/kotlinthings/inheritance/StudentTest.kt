@@ -48,4 +48,28 @@ class StudentTest {
         val isMarried = testSubject.married
         assertTrue(isMarried)
     }
+
+    @Test
+    fun firstName_whenAvailable_returnsFirstElementOfFullName() {
+        // GIVEN
+        testSubject = Student(SAMPLE_ID, FULL_NAME)
+
+        // WHEN
+        val firstName = testSubject.firstName()
+
+        // THEN
+        assertEquals(FULL_NAME.split(" ")[0], firstName)
+    }
+
+    @Test
+    fun longName_restructuresFullName() {
+        // GIVEN
+        testSubject = Student(SAMPLE_ID, FULL_NAME)
+
+        // WHEN
+        val result = testSubject.longName()
+
+        // THEN
+        assertEquals("johnsmith", result)
+    }
 }
