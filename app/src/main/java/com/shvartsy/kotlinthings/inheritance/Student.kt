@@ -7,7 +7,7 @@ class Student(id: Int, fullName: String) : Person(id, fullName) {
     var graduationYear: Int? = null
 
     init {
-        println("initialized Student")
+        // do something after primary constructor is initialized
     }
 
     constructor(id: Int, fullName: String, graduationYear: Int) : this(id, fullName) {

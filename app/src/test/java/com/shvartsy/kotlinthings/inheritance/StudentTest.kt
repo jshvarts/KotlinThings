@@ -6,11 +6,13 @@ import org.junit.Test
 /**
  * Unit tests for {@link Student}.
  */
-const val SAMPLE_ID: Int = 1
-const val FULL_NAME: String = "john smith"
-const val GRADUATION_YEAR: Int = 2020
-
 class StudentTest {
+
+    companion object {
+        const val SAMPLE_ID: Int = 1
+        const val FULL_NAME: String = "john smith"
+        const val GRADUATION_YEAR: Int = 2020
+    }
 
     lateinit var testSubject: Student
 
