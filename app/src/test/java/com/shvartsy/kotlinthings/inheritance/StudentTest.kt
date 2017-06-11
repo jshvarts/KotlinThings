@@ -35,4 +35,17 @@ class StudentTest {
         assertEquals(FULL_NAME, testSubject.fullName)
         assertEquals(GRADUATION_YEAR, testSubject.graduationYear)
     }
+
+    @Test
+    fun married_canBeSet() {
+        // GIVEN
+        testSubject = Student(SAMPLE_ID, FULL_NAME)
+
+        // WHEN
+        testSubject.married = true
+
+        // THEN
+        val isMarried = testSubject.married
+        assertTrue(isMarried)
+    }
 }
